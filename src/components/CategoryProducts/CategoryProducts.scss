@@ -1,0 +1,21 @@
+@import '../../assets/styles/fonts/fonts.scss';
+
+.CategoryProducts{
+    margin: 1rem 0;
+    font-family: BaseFont,sans-serif;
+    
+    
+    &-title{
+        margin: 1rem;
+        text-align: start;
+        font-size: 1.1rem;
+        
+    }
+}
+
+@media screen and (min-width:992px) {
+    .CategoryProducts{
+        margin: 1rem 0 3rem;
+    }
+    
+}

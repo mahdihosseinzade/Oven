@@ -1,0 +1,96 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/colors.scss";
+
+* {
+  &::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
+}
+
+.products-list {
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px !important;
+  margin-top: 2rem;
+  overflow: hidden;
+  &-filter {
+    display: grid;
+    grid-template-columns: repeat(5, 40%);
+    align-items: center;
+    padding: 0.5rem 0;
+    overflow: scroll;
+    z-index: 900;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(240, 238, 238);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    font-family: BaseFont, sans-serif;
+
+    .list-group-item {
+      border: none;
+      background-color: rgb(240, 238, 238);
+      padding: 0 !important;
+      margin: 0.3rem;
+      font-size: 0.8rem !important;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        padding: 0.2rem 0.7rem !important;
+        line-height: 2;
+
+        &:hover {
+          color: $secondary !important;
+          border-radius: 20px !important;
+          box-shadow: 0 0 0.3rem rgba(104, 103, 103, 0.5) !important;
+        }
+      }
+    }
+  }
+
+  &-category {
+    height: 76vh;
+    overflow: scroll;
+  }
+}
+
+.active {
+  color: $secondary !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 0.3rem rgba(104, 103, 103, 0.5) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list {
+    &-filter {
+      grid-template-columns: repeat(7, 30%);
+      padding: 0.9rem 0;
+
+      .list-group-item {
+        margin: 0 !important;
+        a {
+          padding: 0.2rem 0.5rem !important;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products-list {
+    &-filter {
+      display: flex;
+      justify-content: space-around;
+      .list-group-item {
+        a {
+          padding: 0.2rem 0.7rem !important;
+        }
+      }
+    }
+
+    &-category {
+      height: 74vh;
+    }
+  }
+}

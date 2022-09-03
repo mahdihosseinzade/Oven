@@ -1,0 +1,15 @@
+.EventRouter {
+  background-color: #39574a;
+}
+
+.toolbar {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar {
+    height: 4rem;
+  }
+}

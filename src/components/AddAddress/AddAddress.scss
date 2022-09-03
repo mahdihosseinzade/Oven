@@ -1,0 +1,76 @@
+.AddAddress {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 1rem;
+
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  &-set {
+    &-location {
+      width: 100%;
+      height: 8rem;
+      background-color: rgb(66, 66, 66);
+      margin: 1rem 0;
+      color: #fff;
+      border-radius: 1rem;
+      &-icon {
+        width: 1.5rem !important;
+        height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &-form {
+      &-pelak {
+        width: 47%;
+      }
+
+      &-vahed {
+        width: 47%;
+      }
+    }
+
+    &-btn {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+    }
+  }
+
+  &-text {
+    font-family: BaseFont, sans-serif;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .AddAddress {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    input::placeholder {
+      font-size: 0.8rem;
+    }
+    &-set {
+      &-location {
+        height: 12rem;
+      }
+
+      &-btn {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+      }
+    }
+
+    &-text {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts/fonts.scss";
+
+.Container {
+  width: 100%;
+}
+
+.ProductCard {
+  width: 90%;
+  height: 4rem;
+  padding: 4rem 0;
+  border: none !important;
+  margin: 0 1.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+
+  &-image {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid $secondary;
+    border-radius: 50%;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  &-title {
+    font-size: 0.9rem;
+    text-align: right;
+    line-height: 1.5rem;
+  }
+
+  &-text {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  &-btn {
+    justify-content: center;
+    padding: 0 0.3rem 0.2rem !important;
+    border-radius: 16px;
+    height: 1.5rem;
+    font-size: 0.6rem;
+    align-self: flex-end;
+  }
+}
+.Modal {
+  .modal-content {
+    padding: 1rem;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Container {
+    width: auto;
+  }
+
+  .ProductCard {
+    width: auto;
+    height: auto;
+    flex-direction: column !important;
+    padding: 1rem;
+    border: none !important;
+
+    &-image {
+      width: 12rem;
+      height: 12rem;
+      border-width: 4px;
+    }
+
+    &-body {
+      flex-direction: column;
+    }
+
+    &-title {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    &-text {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    &-btn {
+      justify-content: center;
+      padding: 0.2rem 0.8rem 0.3rem !important;
+      height: 2rem;
+      font-size: 0.6rem;
+      align-self: center;
+      margin-top: 1rem;
+    }
+  }
+}

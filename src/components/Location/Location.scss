@@ -1,0 +1,56 @@
+@import "../../assets/styles/fonts/fonts.scss";
+@import "../../assets/styles/colors.scss";
+.Location {
+  font-family: BaseFont, sans-serif;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+
+  &-accessAreaText {
+    color: red;
+  }
+
+  &-mapBox {
+    height: 60vh;
+    margin-bottom: 1rem;
+
+    &-marker {
+      width: 1.5rem !important;
+      height: 1.5rem;
+      color: red;
+    }
+  }
+  &-addressText {
+    color: red;
+  }
+
+  &-buttons {
+    align-self: flex-end;
+
+    &-submit {
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+
+    &-close {
+      font-size: 0.8rem;
+      background-color: white;
+      color: $background-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Location {
+    font-size: 1rem;
+
+    &-buttons {
+      &-submit {
+        font-size: 0.9rem;
+      }
+
+      &-close {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

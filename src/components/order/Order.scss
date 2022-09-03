@@ -1,0 +1,61 @@
+@import "../../assets/styles/colors.scss";
+@import "../../assets/styles/fonts/fonts.scss";
+
+.Order {
+  font-family: BaseFont, sans-serif;
+  font-size: 0.95rem;
+  border-radius: 20px !important;
+  margin-top: 1rem;
+
+  &-form {
+    &-item {
+      margin-bottom: 1rem;
+
+      &-title {
+        margin-bottom: 1rem;
+      }
+
+      &-select {
+        font-size: 0.8rem;
+
+        &-option {
+        }
+      }
+    }
+
+    &-count {
+      font-size: 1.8rem;
+      &-icon {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+      }
+    }
+
+    &-price {
+      font-size: 0.9rem;
+      strong {
+        font-size: 1.4rem;
+      }
+    }
+
+    &-button {
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      padding: 0.4rem 2.5rem;
+    }
+  }
+}
+
+.force {
+  color: red;
+  margin-right: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Order {
+    padding: 0 2rem;
+  }
+}

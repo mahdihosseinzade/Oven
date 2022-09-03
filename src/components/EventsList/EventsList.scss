@@ -1,0 +1,25 @@
+.EventList {
+  background-color: #fff;
+  margin: 0.5rem;
+  border-radius: 20px;
+
+  hr {
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .EventList {
+    margin: 2rem;
+    padding: 4rem !important;
+    width: 95%;
+
+    hr {
+      height: 3px;
+      margin-bottom: 4rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../assets/styles/colors.scss';  
+
+.FormSendSMS{
+
+    &-input{
+        width:70% !important;
+    }
+
+    &-btn{
+        width:50%;
+        color:$text-color !important;
+        border:1px solid #fff !important;
+        opacity: 0.85;
+        
+    }
+
+    &-text{
+        color:#fff !important;
+        font-size:0.7rem !important;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(196, 196, 196) !important;
+        }
+    }
+
+    &-error{
+        color:rgb(221, 142, 142) !important;
+        font-size:0.7rem !important;
+    }
+}
+
+.loading{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    justify-self: center !important;
+    align-self: center !important;
+}
